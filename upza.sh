@@ -1,5 +1,7 @@
 #!/bin/csh
 # recomendado usar em freebsd com zabbix instalado via ports
+# comando para executar o scritp:
+# fetch -o - https://raw.githubusercontent.com/shastybsd/freebsd_update_zabbix/master/upza.sh | csh
 
 # Atualiza o ports
 portsnap fetch update

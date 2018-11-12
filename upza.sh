@@ -1,7 +1,4 @@
 #!/bin/csh
-# recomendado usar em freebsd com zabbix instalado via ports
-# comando para executar o scritp:
-# fetch -o - https://raw.githubusercontent.com/shastybsd/freebsd_update_zabbix/master/upza.sh | csh
 
 # Atualiza o ports
 # portsnap fetch update
@@ -36,7 +33,7 @@ else if ( $? > 0 ) then
 endif
 
 echo "Instalou proxy"
-sleep 10
+sleep 3
 
 cd /usr/ports/net-mgmt/zabbix34-agent && make config-recursive && make -ss install clean
 if ( $? == 0 ) then 
@@ -50,7 +47,7 @@ else if ( $? > 0 ) then
 endif
 
 echo "Instalou agente"
-sleep 10
+sleep 3
 
 if ( -d /usr/local/etc/zabbix3 ) cd /usr/local/etc/zabbix3 && mv * ../zabbix34
 

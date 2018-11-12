@@ -24,7 +24,7 @@ foreach p ( `pkg info | grep zabbix | cut -f1 -d" "` )
 	pkg remove -y $p
 end
 
-cd /usr/ports/net-mgmt/zabbix34-proxy && make config-recursive && make -s install clean
+cd /usr/ports/net-mgmt/zabbix34-proxy && make config-recursive && make -ss install clean
 if ( $? == 0 ) then
 	echo "Sem falha na instalacao do proxy, continuando"
 	pkg lock -y zabbix34-proxy
@@ -38,7 +38,7 @@ endif
 echo "Instalou proxy"
 sleep 10
 
-cd /usr/ports/net-mgmt/zabbix34-agent && make config-recursive && make -s install clean
+cd /usr/ports/net-mgmt/zabbix34-agent && make config-recursive && make -ss install clean
 if ( $? == 0 ) then 
         echo "Sem falha na instalacao do agente, continuando"
 	pkg lock -y zabbix34-agent

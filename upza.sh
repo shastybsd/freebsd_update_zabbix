@@ -4,7 +4,9 @@
 # fetch -o - https://raw.githubusercontent.com/shastybsd/freebsd_update_zabbix/master/upza.sh | csh
 
 # Atualiza o ports
-portsnap fetch update
+# portsnap fetch update
+echo "====  Executar portsnap fetch update antes  ===="
+sleep 5
 
 # Destrava pkg
 echo "Destravando pkg"

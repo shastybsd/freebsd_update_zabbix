@@ -1,7 +1,9 @@
 # freebsd_update_zabbix
 Ajuda o processo de atualização do Zabbix via ports.
 
-Recomendado usar em freebsd com zabbix instalado via ports
+Atualiza zabbix_agent e zabbix_proxy instalado via ports no FreeBSD
+
+Não é para ser usado em  qualquer versão do FreeBSD e nem em qualquer versão do zabbix.
 
 Comando para executar o script:
 

@@ -1,4 +1,8 @@
 #!/bin/csh
+# recomendado usar em freebsd com zabbix instalado via ports
+
+# Atualiza o ports
+portsnap fetch update
 
 # Destrava pkg
 echo "Destravando pkg"

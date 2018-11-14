@@ -12,3 +12,7 @@ Necessita ter o portmaster instalado
 Comando para executar o script:
 
 fetch -o - https://raw.githubusercontent.com/shastybsd/freebsd_update_zabbix/master/upza.sh | csh
+
+Para atualizar a versão 3.4 para 4.0
+
+fetch -o - https://raw.githubusercontent.com/shastybsd/freebsd_update_zabbix/master/upza3to4.sh | csh

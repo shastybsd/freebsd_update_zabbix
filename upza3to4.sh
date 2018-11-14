@@ -55,7 +55,7 @@ if ( -d /usr/local/etc/zabbix34 ) cd /usr/local/etc/zabbix34 && mv * ../zabbix4
 
 if ( -e /var/db/zabbix/proxy.db ) rm -vf /var/db/zabbix/proxy.db
 
-sqlite3 /var/db/zabbix/proxy.db < /usr/local/share/zabbix34/proxy/database/sqlite3/schema.sql
+sqlite3 /var/db/zabbix/proxy.db < /usr/local/share/zabbix4/proxy/database/sqlite3/schema.sql
 chown zabbix:zabbix /var/db/zabbix/proxy.db
 
 /usr/local/etc/rc.d/zabbix_agentd start

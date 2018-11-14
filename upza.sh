@@ -2,6 +2,7 @@
 
 # Atualiza o ports
 # portsnap fetch update
+clear
 echo "====  Executar portsnap fetch update antes  ===="
 sleep 5
 
@@ -10,6 +11,7 @@ echo "Destravando pkg"
 foreach p ( `pkg lock -l | grep zabbix` )
 	pkg unlock -y $p
 end
+clear
 
 # Para servicos
 /usr/local/etc/rc.d/zabbix_proxy stop
@@ -28,7 +30,7 @@ if ( $? == 0 ) then
 	rehash
 else if ( $? > 0 ) then
 	echo "Falhou ao instalar proxy, favor reparar"
-	sleep 3
+	sleep 5
 	exit 1
 endif
 
@@ -42,7 +44,7 @@ if ( $? == 0 ) then
 	rehash
 else if ( $? > 0 ) then
         echo "Falhou ao instalar agente, favor reparar"
-	sleep 3
+	sleep 5
         exit 1
 endif
 

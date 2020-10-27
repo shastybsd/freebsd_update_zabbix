@@ -16,3 +16,8 @@ fetch -o - https://raw.githubusercontent.com/shastybsd/freebsd_update_zabbix/mas
 Para atualizar a versão 3.4 para 4.0
 
 fetch -o - https://raw.githubusercontent.com/shastybsd/freebsd_update_zabbix/master/upza3to4.sh | csh
+
+
+Para atualizar a versão 4.0 para 5.0
+
+fetch -o - https://raw.githubusercontent.com/shastybsd/freebsd_update_zabbix/master/upza4to5.sh | csh

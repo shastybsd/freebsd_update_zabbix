@@ -59,4 +59,7 @@ sqlite3 /var/db/zabbix/proxy.db < /usr/local/share/zabbix5/proxy/database/sqlite
 chown zabbix:zabbix /var/db/zabbix/proxy.db
 
 /usr/local/etc/rc.d/zabbix_agentd start
+
+if ( -e /usr/local/etc/zabbix5/zabbix.psk ) echo "Corrigir configuracao com PSK" && sleep 5
+
 /usr/local/etc/rc.d/zabbix_proxy start

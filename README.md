@@ -1,13 +1,13 @@
 # freebsd_update_zabbix
 Ajuda o processo de atualização do Zabbix via ports.
 
-Atualiza zabbix_agent e zabbix_proxy instalado via ports no FreeBSD
+Atualiza zabbix_agent e zabbix_proxy instalado via ports no FreeBSD.
 
 Não é para ser usado em  qualquer versão do FreeBSD e nem em qualquer versão do zabbix.
 
-Atualizar o ports antes de executar
+Atualizar o ports antes de executar (portsnap fetch update).
 
-Necessita ter o portmaster instalado
+Necessita ter o portmaster instalado.
 
 Comando para executar o script:
 
